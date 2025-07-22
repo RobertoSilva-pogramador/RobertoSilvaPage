@@ -4,8 +4,26 @@
     --cor-terciaria: #a3a3a3;
     --cor-destaque: #444444;
     --cor-texto: rgb(0, 0, 0);
+    --bg-formulario: #ffffff;
     --font-familia: Roboto,'Courier New', Courier, monospace Arial, sans-serif;
 }
+body.dark-mode {
+  --cor-primaria: #ffffff;
+  --cor-secundaria: #121212;
+  --cor-terciaria: #cccccc;
+  --cor-destaque: #dddddd;
+  --cor-texto: #f2f2f2;
+  --bg-formulario: #1e1e1e;
+}
+#darkModeToggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--cor-secundaria);
+  margin: 10px;
+}
+
 .logo {
   width: 200px;           
   height: auto;
@@ -240,6 +258,7 @@ main {
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   font-family: Arial, sans-serif;
   box-sizing: border-box; /* garante que padding não empurre largura */
+     background-color: var(--bg-formulario);
 }
 
 .formulario h2 {
